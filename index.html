@@ -1,93 +1,341 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <title>Eddie Chiang</title>
-  <link rel="shortcut icon" type="image/jpg" href="assets/images/Eddie.jpg" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
-    crossorigin="anonymous">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="shortcut icon" type="image/jpg" href="assets/images/echiang-brand.png" />
+  <title>Eddie Chiang - Portfolio</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="assets/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="assets/css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
 </head>
 
 <body>
+  <!-- <nav class="white" role="navigation"> -->
+  <nav class="white" role="navigation" id="myHeader">
+    <div class="nav-wrapper container">
+      <img src="assets/images/echiang-brand.png" width="60px" style="margin-right:10px" />
+      <a id="logo-container" href="#" class="brand-logo"> Eddie Chiang</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
 
-  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: white; border-bottom: 1px solid #777777">
-    <div class="container">
-      <!-- <a class="navbar-brand" href="#">Eddie Chiang</a> -->
-      <img src="assets/images/eddieteallogo.png" width="200px" />
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="portfolio.html">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
-        </ul>
-      </div>
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     </div>
   </nav>
 
-  <div class="container" style="background-color: white; margin-top: 20px">
-    <div class="row">
-      <div class="col-sm-12">
-        <div class="page-header">
-          <h1>About Me</h1>
+  <div class="content">
+    <div id="index-banner" class="parallax-container">
+      <!-- <div class="section no-pad-bot"> -->
+      <div class="container">
+        <br><br>
+        <h1 class="header center teal-text text-lighten-2"></h1>
+        <div class="row center">
+          <h5 class="right header col s12 light" id="tagline">Full stack developer covering front end and back
+            end web development cycle for continuous, multi-technology projects that yield greater user experience.</h5>
         </div>
-        <hr>
-        <div class="media">
-          <img src="assets/images/Eddie.jpg" class="mr-3" id="bio-image" width=150px;>
-          <div class="media-body">
-            <p>I am currently seeking a career change to become a Full-Stack Developer in order to apply my passion for
-              the digital revolution and incorporate my experience where a vast knowledge of all facets of business
-              research and development. With both front-end and back-end web developer skills, I will be familiar with
-              all layers in computer software development make building software much easier and anticipate problems
-              accordingly.</p>
+        <div class="row center">
+          <a href="http://materializecss.com/getting-started.html" id="download-button"
+            class="right btn-large waves-effect waves-light teal lighten-1">See my portfolio</a>
+        </div>
+        <br><br>
 
-            <p>I am a biomedical research scientist and an entrepreneur. My formal training is in vascular biology with
-              expertise in pulmonary medicine. I'm also an executive of a biotech start-up that is commercializing
-              novel technology derived from the academic research, specifically to develop a therapeutic antibody to
-              treat inflammatory lung injury. My expertise is a comprehensive knowledge of top to bottom in various
-              fields such as NIH grant awards and transitioning of novel intellectual properties to early stage
-              therapeutic commercial entities. I hope to transfer these skills as a Web Designer/Developer
-              professional.</p>
+      </div>
+      <!-- </div> -->
+      <div class="parallax" id="eddie-cover-img"><img src="assets/images/eddiecover.jpg" alt="Eddie Cover Img"></div>
+    </div>
+
+    <div id="about">
+      <div class="container">
+        <div class="section">
+          <!--   Icon Section   -->
+          <div class="row">
+            <div class="col s12 m4">
+              <div class="icon-block">
+                <h2 class="center brown-text"><i class="material-icons">face</i></h2>
+                <h5 class="center">About Me</h5>
+                <p class="light">I'm a full stack developer based in sunny Tucson, Arizona. I enjoy creating functional,
+                  beautiful, and impactful products. Although my professional path has taken many twists and turns, from
+                  a
+                  research scientist to small business entrepreneur, I continue with my passion to help others and solve
+                  problems.</p>
+              </div>
+            </div>
+
+            <div class="col s12 m4">
+              <div class="icon-block">
+                <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
+                <h5 class="center">Faster Development</h5>
+                <p class="light">As a full stack web developer, I provide the benefit of a comprehensive knowledge on
+                  both
+                  front-end and back-end development cycle to build complete, scaleable web or app through a continuous
+                  process saving time and money.</p>
+              </div>
+            </div>
+
+            <div class="col s12 m4">
+              <div class="icon-block">
+                <h2 class="center brown-text"><i class="material-icons">group</i></h2>
+                <h5 class="center">User Experience Focused</h5>
+                <p class="light">I have an obsessive attention for details, while always keeping the big picture in
+                  focus.
+                  My familiarity with both client-side and server-side web development allows me to provide and
+                  implement
+                  multiple, seamless technologies to create a great user experience.</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <div class="card-footer text-muted fixed-bottom" style="margin-bottom: 0px">
-      <div id="footer">
-        <span style="color: #4aaaa5">
-          <a class=link href="https://www.linkedin.com/in/eddie-t-chiang"><i class="fab fa-linkedin fa-2x "></i></a>
-          <a class=link href="https://github.com/echiang73"><i class="fab fa-github fa-2x"></i></a>
-          <a class=link href="https://angel.co/eddie-chiang"><i class="fab fa-angellist fa-2x"></i></a>
-        </span>
+
+    <!-- <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="assets/images/background2.jpg" alt="Unsplashed background img 2"></div>
+  </div> -->
+
+    <div id="skills">
+      <div class="container">
+        <div class="section">
+          <!--   Icon Section   -->
+          <div class="row">
+
+            <div class="col s12 m4">
+              <div class="icon-block">
+                <h2 class="center brown-text"><i class="material-icons">build</i></h2>
+                <h5 class="center">Skills</h5>
+                <br>
+
+                <p id="skills-label">HTML</p>
+                <div class="skills-container">
+                  <div class="skills html">90%</div>
+                </div>
+
+                <p id="skills-label">CSS</p>
+                <div class="skills-container">
+                  <div class="skills css">80%</div>
+                </div>
+
+                <p id="skills-label">JavaScript</p>
+                <div class="skills-container">
+                  <div class="skills js">65%</div>
+                </div>
+
+                <p id="skills-label">Node.js</p>
+                <div class="skills-container">
+                  <div class="skills node">60%</div>
+                </div>
+
+                <p id="skills-label">MERN Stack</p>
+                <div class="skills-container">
+                  <div class="skills mern">50%</div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col s12 m8">
+              <div class="icon-block">
+
+                  <div class="row">
+                      <div class="col s12 m12 card" style="background-image: linear-gradient(#8b969b, #596e79)">
+                        <div class="card-content white-text">
+                          <div class="col s12 m3">
+                            <img src="assets/images/logos/html5.png" alt="HTML5 Img" class="logos">
+                            <p>HTML5</p>
+                          </div>
+                          <div class="col s12 m3">
+                            <img src="assets/images/logos/css3.png" alt="CSS3 Img" class="logos">
+                            <p>CSS3</p>
+                          </div>
+                          <div class="col s12 m3">
+                            <img src="assets/images/logos/javascript.png" alt="JavaScript Img" class="logos">
+                            <p>JavaScript</p>
+                          </div>
+                          <div class="col s12 m3">
+    
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+    
+                    <div class="row">
+                      <div class="col s12 m12 card" style="background-image: linear-gradient(#8b969b, #596e79)">
+                        <div class="card-content white-text">
+                          <div class="col s12 m3">
+                            <img src="assets/images/logos/bootstrap.png" alt="Bootstrap Img" class="logos">
+                            <p>Bootstrap</p>
+                          </div>
+                          <div class="col s12 m3">
+                            <img src="assets/images/logos/materialize.png" alt="Materialize Img" class="logos">
+                            <p>Materialize</p>
+                          </div>
+                          <div class="col s12 m3">
+                            <img src="assets/images/logos/jquery.png" alt="jQuery Img" class="logos">
+                            <p>jQuery</p>
+                          </div>
+                          <div class="col s12 m3">
+    
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+    
+                    <div class="row">
+                      <div class="col s12 m12 card" style="background-image: linear-gradient(#8b969b, #596e79)">
+                        <div class="card-content white-text">
+                          <div class="col s12 m3">
+                            <img src="assets/images/logos/mongodb.png" alt="MongoDB Img" class="logos">
+                            <p>MongoDB</p>
+                          </div>
+                          <div class="col s12 m3">
+                            <img src="assets/images/logos/express.png" alt="Express Img" class="logos">
+                            <p>Express</p>
+                          </div>
+                          <div class="col s12 m3">
+                            <img src="assets/images/logos/react.png" alt="React Img" class="logos">
+                            <p>React</p>
+                          </div>
+                          <div class="col s12 m3">
+                            <img src="assets/images/logos/nodejs.png" alt="NodeJS Img" class="logos">
+                            <p>Node.js</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+    
+                    <div class="row">
+                      <div class="col s12 m12 card" style="background-image: linear-gradient(#8b969b, #596e79)">
+                        <div class="card-content white-text">
+                          <div class="col s12 m3">
+                            <img src="assets/images/logos/github.png" alt="GitHub Img" class="logos">
+                            <p>GitHub</p>
+                          </div>
+                          <div class="col s12 m3">
+                            <img src="assets/images/logos/heroku.png" alt="Heroku Img" class="logos">
+                            <p>Heroku</p>
+                          </div>
+                          <div class="col s12 m3">
+                            <img src="assets/images/logos/illustrator.png" alt="Illustrator Img" class="logos">
+                            <p>Illustrator</p>
+                          </div>
+                          <div class="col s12 m3">
+                            <img src="assets/images/logos/photoshop" alt="Photoshop Img" class="logos">
+                            <p>Photoshop</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                
+              </div>
+            </div>
+
+          </div>
+        </div>
+
       </div>
     </div>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
-    crossorigin="anonymous"></script>
-  <!-- <script>$(function () {
-        $('[data-toggle="tooltip"]').tooltip()
-      })</script> -->
+    <div id="contact">
+      <div class="container">
+        <div class="section">
 
+          <div class="row">
+            <div class="col s12 center">
+              <h3><i class="mdi-content-send brown-text"></i></h3>
+              <h4>Contact Us</h4>
+              <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id
+                nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut
+                ultricies
+                eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et
+                pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus
+                sed.
+                Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat.
+                Nullam
+                eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et
+                ultrices posuere cubilia Curae;</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="parallax-container valign-wrapper">
+      <div class="section no-pad-bot">
+        <div class="container">
+          <div class="row center">
+            <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+          </div>
+        </div>
+      </div>
+      <div class="parallax"><img src="assets/images/background3.jpg" alt="Unsplashed background img 3"></div>
+    </div>
+
+    <footer class="page-footer teal">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Company Bio</h5>
+            <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our
+              full time job. Any amount would help support and continue development on this project and is greatly
+              appreciated.</p>
+
+
+          </div>
+          <div class="col l3 s12">
+            <h5 class="white-text">Settings</h5>
+            <ul>
+              <li><a class="white-text" href="#!">Link 1</a></li>
+              <li><a class="white-text" href="#!">Link 2</a></li>
+              <li><a class="white-text" href="#!">Link 3</a></li>
+              <li><a class="white-text" href="#!">Link 4</a></li>
+            </ul>
+          </div>
+          <div class="col l3 s12">
+            <h5 class="white-text">Connect</h5>
+            <ul>
+              <li><a class="white-text" href="#!">Link 1</a></li>
+              <li><a class="white-text" href="#!">Link 2</a></li>
+              <li><a class="white-text" href="#!">Link 3</a></li>
+              <li><a class="white-text" href="#!">Link 4</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+          Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="assets/javascript/materialize.js"></script>
+  <script src="assets/javascript/init.js"></script>
 
 </body>
 

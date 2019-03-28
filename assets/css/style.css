@@ -27,17 +27,16 @@ p {
 
 
 
-
-
-#contact{
-  background-color: yellow;
-}
 #skills{
   background-color: #51a39a;
 }
 #portfolio{
-  background-color: green;
+  /* background-color: green; */
 }
+#contact{
+  background-color: #51a39a;
+}
+
 h5{
   margin: -5px 0 -5px 0;
 }
@@ -78,6 +77,14 @@ h5{
 
 #skills-label {
   margin-bottom: -2px;
+}
+
+.fixed-action-btn{
+  position: relative;
+  margin-top: 22px;
+  margin-right: -20px;
+  /* right: auto;  */
+  /* margin-left: 5%; */
 }
 
 

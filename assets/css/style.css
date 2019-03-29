@@ -6,11 +6,11 @@ p {
   line-height: 2rem;
   text-align: center;
 }
-/* #myHeader {
+#myHeader {
   padding: 0px 0px 1px 0px;
   background: #555;
   color: #f1f1f1;
-  z-index: 2;
+  z-index: 998; /* first number where AFB isn't above the header */
 }
 .sticky {
   position: fixed;
@@ -18,9 +18,9 @@ p {
   width: 100%;
 }
 .sticky + .content {
-  padding-top: 0px;
-  padding-top: 1px;
-} */
+  padding-top: 60px;
+  
+}
 #eddie-cover-img {
   /* margin-top: -100px; */
 }
@@ -79,6 +79,10 @@ h5{
   margin-bottom: -2px;
 }
 
+.card-title {
+  margin-top: -40px;
+  color: #51a39a;
+}
 .fixed-action-btn{
   position: relative;
   margin-top: 22px;

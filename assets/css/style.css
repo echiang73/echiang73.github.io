@@ -19,10 +19,6 @@ p {
 }
 .sticky + .content {
   padding-top: 60px;
-  
-}
-#eddie-cover-img {
-  /* margin-top: -100px; */
 }
 #brand-image {
   width: 60px;
@@ -164,10 +160,6 @@ h5 {
   opacity: 1;
 }
 
-
-
-
-
 @media only screen and (max-width : 992px) {
   .parallax-container .section {
     position: absolute;
@@ -181,15 +173,7 @@ h5 {
     width: 100%;
   }
   #download-button {
-    /* margin-right: 60px; */
     display: none;
-  }
-  #tagline-with-button {
-    /* position: absolute; */
-    /* color: black; */
-    /* margin-top:50px; */
-    /* width: 500px; */
-    /* bottom: -50px; */
   }
   .logos {
     width: 60px;
@@ -206,7 +190,7 @@ h5 {
   }
   #logo-container {
     margin-left: 20px;
-    font-size: 1.9rem;
+    font-size: 1.8rem;
   }
   #brand-image {
     width: 50px; 
@@ -218,14 +202,6 @@ h5 {
   #download-button {
     display: none;
   }
-  #tagline-with-button {
-    /* position: absolute; */
-    /* color: black; */
-    /* margin-top:50px; */
-    /* width: 500px; */
-    /* bottom: -50px; */
-    /* z-index: 10000; /* find the appropriate z-index later */
-  }
 }
 
 .icon-block {
@@ -234,7 +210,6 @@ h5 {
 .icon-block .material-icons {
   font-size: inherit;
 }
-
 footer.page-footer {
   margin: 0;
 }

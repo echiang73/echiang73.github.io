@@ -191,6 +191,9 @@ h5 {
     /* width: 500px; */
     /* bottom: -50px; */
   }
+  .logos {
+    width: 60px;
+  }
 }
 
 @media only screen and (max-width : 600px) {
@@ -220,7 +223,7 @@ h5 {
     /* color: black; */
     /* margin-top:50px; */
     /* width: 500px; */
-    bottom: -50px;
+    /* bottom: -50px; */
     /* z-index: 10000; /* find the appropriate z-index later */
   }
 }

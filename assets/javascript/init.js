@@ -52,5 +52,46 @@ document.addEventListener('DOMContentLoaded', function() {
 // $(document).ready(function(){
 //   $('.fixed-action-btn').floatingActionButton();
 // });
-    
-    
+
+// // copy email address to clipboard
+// function copyEmail() {
+//   // $("#email-tooltip").click(function() {
+//   // var copyText = $("#email-tooltip").attr("data-clipboard-text");
+//   var copyText = document.getElementById("myInput");
+//   // var copyText = "echiang73@gmail.com";
+//   copyText.select();
+//   document.execCommand("copy");
+  
+//   var tooltip = document.getElementById("email-tooltip");
+//   tooltip.innerHTML = "Copied: echiang73@gmail.com";
+// }
+
+// function outFunc() {
+//   var tooltip = document.getElementById("email-tooltip");
+//   tooltip.innerHTML = "Click to copy my email address to your clipboard 😀";
+// }  
+
+
+	// Copy email address to clipboard AD
+	var clipboard = new ClipboardJS('#email');
+
+	clipboard.on('success', function(e) {
+	    $('#email-tooltip').attr("tooltip", "Yay! My email address has been copied to your clipboard ✅");
+	    $('#email-tooltip').addClass('success');
+
+	    // Reset
+	    $('#email-tooltip').mouseleave(function() {
+
+		    setTimeout( function(){
+				$('#email-tooltip').attr("tooltip", "Click to copy my email address to your clipboard 😀");
+		    	$('#email-tooltip').removeClass('success');
+			}, 300);
+		});
+
+	    e.clearSelection();
+	});
+
+	clipboard.on('error', function(e) {
+	    $('#email-tooltip').attr("tooltip", "Sorry, there was a technical glitch. Please try again.");
+	    $('#email-tooltip').toggleClass('fail');
+	});

@@ -7,7 +7,7 @@ p {
   text-align: center;
 }
 #myHeader {
-  padding: 0px 0px 1px 0px;
+  /* padding: 0px 0px 1px 0px; */
   background: #555;
   color: #f1f1f1;
   z-index: 998; /* first number where AFB isn't above the header */
@@ -25,19 +25,30 @@ p {
   /* margin-top: -100px; */
 }
 
-
-
-#skills{
-  background-color: #51a39a;
+#about {
+  padding-top: 25px;
 }
-#portfolio{
+
+#skills {
+  background-color: #51a39a;
+  padding-top: 40px;
+}
+#portfolio {
   /* background-color: green; */
+  padding-top: 25px;
 }
-#contact{
+#education {
+  background-color: #51a39a;
+  padding-top: 25px;
+}
+#contact {
   background-color: #51a39a;
 }
+.link{
+  color: black;
+}
 
-h5{
+h5 {
   margin: -5px 0 -5px 0;
 }
 #tagline {
@@ -90,6 +101,10 @@ h5{
   /* right: auto;  */
   /* margin-left: 5%; */
 }
+#college1, #college2 {
+  font-size: 24px;
+  text-align: left;
+}
 
 
 .sidenav-trigger {
@@ -105,6 +120,49 @@ h5{
 .parallax-container .section {
   width: 100%;
 }
+
+/* tooltip for copying email address to clipboard*/
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 200px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -75px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+
+
 
 @media only screen and (max-width : 992px) {
   .parallax-container .section {

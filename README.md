@@ -22,3 +22,5 @@ https://echiang73.github.io/
 ### Here is the preview of the web application:
 
 ![](assets/images/webpreview.gif "gif")
+
+![](assets/images/mobilepreview.gif "gif")

@@ -24,6 +24,10 @@ p {
 #eddie-cover-img {
   /* margin-top: -100px; */
 }
+#brand-image {
+  width: 60px;
+  margin-right:10px; 
+}
 
 #about {
   padding-top: 25px;
@@ -53,10 +57,10 @@ h5 {
 }
 #tagline {
   margin-top:50px;
-  width: 350px;
+  width: 325px;
 }
 #download-button {
-  margin-right: 65px;
+  margin-right: 80px;
 }
 .logos {
   width: 75px;
@@ -172,11 +176,52 @@ h5 {
   #index-banner .section {
     top: 10%;
   }
+  #tagline {
+    margin-top: 300px;
+    width: 100%;
+  }
+  #download-button {
+    /* margin-right: 60px; */
+    display: none;
+  }
+  #tagline-with-button {
+    /* position: absolute; */
+    /* color: black; */
+    /* margin-top:50px; */
+    /* width: 500px; */
+    /* bottom: -50px; */
+  }
 }
 
 @media only screen and (max-width : 600px) {
   #index-banner .section {
     top: 0;
+    position: relative; /* to keep image same height */
+  }
+  #myHeader {
+    padding: 0px 0px 50px 0px;
+  }
+  #logo-container {
+    margin-left: 20px;
+    font-size: 1.9rem;
+  }
+  #brand-image {
+    width: 50px; 
+  }
+  #tagline {
+    margin-top: 350px;
+    width: 100%;
+  }
+  #download-button {
+    display: none;
+  }
+  #tagline-with-button {
+    /* position: absolute; */
+    /* color: black; */
+    /* margin-top:50px; */
+    /* width: 500px; */
+    bottom: -50px;
+    /* z-index: 10000; /* find the appropriate z-index later */
   }
 }
 

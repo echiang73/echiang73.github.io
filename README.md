@@ -14,12 +14,11 @@ https://echiang73.github.io/
 * JavaScript
 * Bootstrap
 * jQuery
-* Firebase API for real-time, multi-device -browser synchronization
-* Moment.js to manage and calculate time in JS.
+* Materialize CSS
 * Responsive Web Design Media Query
-* Font Awesome and @font-face for specialized fonts
+* Font Awesome
 
-### Here is the preview of the web application:
+### Here are the previews of the web application:
 
 ![](assets/images/webpreview.gif "gif")
 

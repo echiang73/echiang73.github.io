@@ -83,10 +83,10 @@ h5 {
 
 .html {width: 90%; background-image: linear-gradient(to right, rgb(255, 119, 0), rgb(255, 77, 0)); border-right: 1px black solid} /* Green */
 .css {width: 80%; background-image: linear-gradient(to right, rgb(129, 198, 254), #2196F3); border-right: 1px black solid} /* Blue */
-.js {width: 65%; background-image: linear-gradient(to right, rgb(250, 237, 163), rgb(208, 201, 0)); border-right: 1px black solid} /* Red */
-.node {width: 60%; background-image: linear-gradient(to right, rgb(22, 211, 211), teal); border-right: 1px black solid}
-.mern {width: 50%; background-image: linear-gradient(to right, #c9c9c9, #808080); border-right: 1px black solid} /* Dark Grey */
-.illustrator {width: 65%; background-image: linear-gradient(to right, rgb(255, 208, 119), orange); border-right: 1px black solid} /* AI Orange */
+.js {width: 70%; background-image: linear-gradient(to right, rgb(250, 237, 163), rgb(208, 201, 0)); border-right: 1px black solid} /* Red */
+.node {width: 55%; background-image: linear-gradient(to right, rgb(22, 211, 211), teal); border-right: 1px black solid}
+.mern {width: 70%; background-image: linear-gradient(to right, #c9c9c9, #808080); border-right: 1px black solid} /* Dark Grey */
+.illustrator {width: 60%; background-image: linear-gradient(to right, rgb(255, 208, 119), orange); border-right: 1px black solid} /* AI Orange */
 .photoshop {width: 80%; background-image: linear-gradient(to right, rgb(50, 155, 240), rgb(22, 22, 181)); border-right: 1px black solid} /* PS Blue */
 
 #skills-label {

@@ -6,7 +6,7 @@ My name is Eddie Chiang, and I'm a Full-Stack Developer with a passion for the d
 I have a strong background as a biomedical research scientist and an entrepreneur for a biotechnology start-up company, which means that I have an eye for details while always keeping the big picture in mind.  I hope to incorporate my professional experience and vast knowledge of business/research & development as transferable skills for a Web Designer/Developer.
 
 Click on the link!
-https://echiang73.github.io/
+http://eddiechiang.com
 
 ## Built with
 * HTML5

@@ -25,6 +25,14 @@ p {
   margin-right:10px; 
 }
 
+.makeHidden{
+  visibility: hidden;
+}
+
+.makeVisible{
+  visibility: visible;
+}
+
 #about {
   padding-top: 25px;
 }

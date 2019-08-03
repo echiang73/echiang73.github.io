@@ -69,3 +69,61 @@ clip.on("error", function(e) {
   $('.tooltiptext').attr("tooltiptext", "Sorry, there was a technical glitch. Please try again.");
 	$('.tooltiptext').toggleClass('fail');
 });
+
+
+// Scroll function courtesy of Scott Dowding; http://stackoverflow.com/questions/487073/check-if-element-is-visible-after-scrolling
+
+$(document).ready(function() {
+  // Check if element is scrolled into view
+
+  function isPartiallyScrolledIntoView(elem) {
+
+    // var elementBoundary = elem.getBoundingClientRect();
+ 
+    //   var top = elementBoundary.top;
+    //   var bottom = elementBoundary.bottom;
+    //   var height = elementBoundary.height;
+ 
+    //   return ((top + height >= 0) && (height + window.innerHeight >= bottom));
+
+    var elemTop = $(elem).offset().top;
+    var elemBottom = elemTop + $(elem).height();
+    var docViewBottom = $(window).scrollTop() + $(window).height();
+
+    return ((elemTop + docViewBottom >= 0) && (docViewBottom + window.innerHeight - 50 >= elemBottom));
+  }
+
+  function isScrolledIntoView(elem) {
+    var docViewTop = $(window).scrollTop();
+    var docViewBottom = docViewTop + $(window).height();
+
+    var elemTop = $(elem).offset().top;
+    var elemBottom = elemTop + $(elem).height();
+
+    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+  }
+  // If element is scrolled into view, fade it in
+  $(window).scroll(function() {
+    $('.scroll-animations .about').each(function() {
+      // if (isScrolledIntoView(this) === true) {
+      if (isPartiallyScrolledIntoView(this) === true) {
+        $(this).addClass('makeVisible');
+        $(this).addClass('fadeInLeft');
+      }
+    });
+    $('.scroll-animations .portfolioLeft').each(function() {
+      // if (isScrolledIntoView(this) === true) {
+      if (isPartiallyScrolledIntoView(this) === true) {
+        $(this).addClass('makeVisible');
+        $(this).addClass('fadeInLeft');
+      }
+    });
+    $('.scroll-animations .portfolioRight').each(function() {
+      // if (isScrolledIntoView(this) === true) {
+      if (isPartiallyScrolledIntoView(this) === true) {
+        $(this).addClass('makeVisible');
+        $(this).addClass('fadeInRight');
+      }
+    });
+  });
+});
